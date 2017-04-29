@@ -14,6 +14,14 @@ class site {
         $this->footer = $footer;
     }
     
+    public function display($content, $title) {
+        global $page;
+        include $this->header;
+        $page->display($content);
+        include $this->footer;
+        
+    }
+    
 }
 
 

@@ -1,18 +1,15 @@
 <?php
-    
-function __autoload($class) {
-      include "classes/".$class.".php";
-    
-        
- }
+ 
+include("config.php");
+
+$title = "My OOP Site";
+$content = "<div>Hello world</div>";
+
+$site->display($content, $title);
 
 
-$site = new site;
 
-$site->addHeader("header.php");
-$site->addFooter("footer.php");
 
-var_dump($site);
 
  
         
